@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contact Bilal Ahmad — CS student at Qureshi University, Lahore. Open for summer internships and full-stack projects."/>
+  <title>Contact | Bilal Ahmad — Get In Touch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@300;400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="contact">
+
+  <div id="scroll-progress"></div>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-pill">BA</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Bilal Ahmad</span>
+          <span class="nav-logo-sub">CS (5th Sem) · Qureshi University</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:.625rem;flex-shrink:0;">
+        <button class="btn-gradient" data-action="download-cv" style="padding:.45rem 1rem;font-size:.75rem;">
+          <span class="material-symbols-outlined" style="font-size:1rem;">download</span>
+          <span>Resume</span>
+        </button>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="material-symbols-outlined" style="font-size:1.35rem;">menu</span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-container">
+
+      <!-- Page header -->
+      <div class="reveal" style="margin-bottom:2.5rem;">
+        <div class="section-label">
+          <span class="material-symbols-outlined">forward_to_inbox</span>
+          <span>Get In Touch</span>
+        </div>
+        <h1 class="section-title">Let's Connect &amp; Collaborate</h1>
+        <p class="section-desc">I am currently open for software engineering internships, co-op programs, freelance projects, and academic collaborations. Reach out — I respond within 24 hours.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr;gap:1.5rem;" id="contact-layout">
+        <style>
+          @media(min-width:1024px){
+            #contact-layout{grid-template-columns:5fr 7fr!important;}
+          }
+        </style>
+
+        <!-- Contact Info -->
+        <div class="glass-card reveal" style="padding:1.75rem 2rem;display:flex;flex-direction:column;justify-content:space-between;gap:1.75rem;">
+          <div style="display:flex;flex-direction:column;gap:1.25rem;">
+            <div>
+              <h2 style="font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.35rem;">Contact Information</h2>
+              <p style="font-size:.82rem;color:var(--muted);line-height:1.7;">Send a direct email message or reach out via professional networks. I'll respond promptly!</p>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:1rem;">
+
+              <!-- Email -->
+              <div style="display:flex;align-items:center;gap:.875rem;">
+                <div class="icon-bubble indigo">
+                  <span class="material-symbols-outlined" style="font-size:1.2rem;">mail</span>
+                </div>
+                <div>
+                  <span style="font-family:var(--font-code);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:.15rem;">Direct Email</span>
+                  <a href="mailto:8ilalahmad56@gmail.com" style="font-size:.875rem;font-weight:600;color:var(--text);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent1)'" onmouseout="this.style.color='var(--text)'">
+                    8ilalahmad56@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- University -->
+              <div style="display:flex;align-items:center;gap:.875rem;">
+                <div class="icon-bubble cyan">
+                  <span class="material-symbols-outlined" style="font-size:1.2rem;">school</span>
+                </div>
+                <div>
+                  <span style="font-family:var(--font-code);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:.15rem;">University &amp; Standing</span>
+                  <span style="font-size:.875rem;font-weight:600;color:var(--text);">Qureshi University, Lahore (5th Sem)</span>
+                </div>
+              </div>
+
+              <!-- Response time -->
+              <div style="display:flex;align-items:center;gap:.875rem;">
+                <div class="icon-bubble green">
+                  <span class="material-symbols-outlined" style="font-size:1.2rem;">timer</span>
+                </div>
+                <div>
+                  <span style="font-family:var(--font-code);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:.15rem;">Response Speed</span>
+                  <span style="font-size:.875rem;font-weight:600;color:var(--text);">Usually replies within 24 hours</span>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div style="display:flex;align-items:center;gap:.875rem;">
+                <div class="icon-bubble violet">
+                  <span class="material-symbols-outlined" style="font-size:1.2rem;">terminal</span>
+                </div>
+                <div>
+                  <span style="font-family:var(--font-code);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:.15rem;">GitHub</span>
+                  <a href="https://github.com/bilalahmad" target="_blank" rel="noopener noreferrer" style="font-size:.875rem;font-weight:600;color:var(--text);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent1)'" onmouseout="this.style.color='var(--text)'">
+                    github.com/bilalahmad
+                  </a>
+                </div>
+              </div>
+
+              <!-- LinkedIn -->
+              <div style="display:flex;align-items:center;gap:.875rem;">
+                <div class="icon-bubble indigo">
+                  <span class="material-symbols-outlined" style="font-size:1.2rem;">person</span>
+                </div>
+                <div>
+                  <span style="font-family:var(--font-code);font-size:.62rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:block;margin-bottom:.15rem;">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/bilal-ahmad-7b297a438" target="_blank" rel="noopener noreferrer" style="font-size:.875rem;font-weight:600;color:var(--text);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent1)'" onmouseout="this.style.color='var(--text)'">
+                    bilal-ahmad-7b297a438
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Availability badge -->
+          <div style="padding:1rem;border-radius:.875rem;background:rgba(52,211,153,.06);border:1px solid rgba(52,211,153,.25);display:flex;align-items:center;gap:.75rem;box-shadow:0 0 18px rgba(52,211,153,.08);">
+            <span style="width:.625rem;height:.625rem;border-radius:50%;background:var(--success);flex-shrink:0;animation:ping 1.4s cubic-bezier(0,0,.2,1) infinite;"></span>
+            <p style="font-size:.8rem;color:var(--text);">
+              <strong style="color:var(--success);">Available Now:</strong> Open for Summer Internships &amp; Full-Stack Projects.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card reveal" style="padding:1.75rem 2rem;">
+          <form id="contact-form" style="display:flex;flex-direction:column;gap:1.125rem;">
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+              <div style="display:flex;flex-direction:column;gap:.375rem;">
+                <label for="contact-name">Your Full Name *</label>
+                <input type="text" id="contact-name" placeholder="e.g. John Doe" required
+                  style="width:100%;padding:.7rem 1rem;border-radius:.75rem;background:rgba(17,24,39,.9);border:1px solid rgba(148,163,184,.18);color:var(--text);font-family:var(--font-body);font-size:.875rem;outline:none;transition:border-color .2s,box-shadow .2s;"
+                  onfocus="this.style.borderColor='var(--accent1)';this.style.boxShadow='0 0 0 2px rgba(34,211,238,.15)'"
+                  onblur="this.style.borderColor='rgba(148,163,184,.18)';this.style.boxShadow='none'"/>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:.375rem;">
+                <label for="contact-email">Your Email Address *</label>
+                <input type="email" id="contact-email" placeholder="john@company.com" required
+                  style="width:100%;padding:.7rem 1rem;border-radius:.75rem;background:rgba(17,24,39,.9);border:1px solid rgba(148,163,184,.18);color:var(--text);font-family:var(--font-body);font-size:.875rem;outline:none;transition:border-color .2s,box-shadow .2s;"
+                  onfocus="this.style.borderColor='var(--accent1)';this.style.boxShadow='0 0 0 2px rgba(34,211,238,.15)'"
+                  onblur="this.style.borderColor='rgba(148,163,184,.18)';this.style.boxShadow='none'"/>
+              </div>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:.375rem;">
+              <label for="contact-subject">Inquiry Subject *</label>
+              <input type="text" id="contact-subject" placeholder="Internship Opportunity / Project Inquiry / Mentorship" required
+                style="width:100%;padding:.7rem 1rem;border-radius:.75rem;background:rgba(17,24,39,.9);border:1px solid rgba(148,163,184,.18);color:var(--text);font-family:var(--font-body);font-size:.875rem;outline:none;transition:border-color .2s,box-shadow .2s;"
+                onfocus="this.style.borderColor='var(--accent1)';this.style.boxShadow='0 0 0 2px rgba(34,211,238,.15)'"
+                onblur="this.style.borderColor='rgba(148,163,184,.18)';this.style.boxShadow='none'"/>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:.375rem;">
+              <label for="contact-message">Your Message *</label>
+              <textarea id="contact-message" rows="5" placeholder="Hi Bilal, I reviewed your Flashcard Generator and University projects…" required
+                style="width:100%;padding:.7rem 1rem;border-radius:.75rem;background:rgba(17,24,39,.9);border:1px solid rgba(148,163,184,.18);color:var(--text);font-family:var(--font-body);font-size:.875rem;outline:none;transition:border-color .2s,box-shadow .2s;resize:vertical;"
+                onfocus="this.style.borderColor='var(--accent1)';this.style.boxShadow='0 0 0 2px rgba(34,211,238,.15)'"
+                onblur="this.style.borderColor='rgba(148,163,184,.18)';this.style.boxShadow='none'"></textarea>
+            </div>
+
+            <!-- Feedback message -->
+            <div id="form-feedback" style="display:none;"></div>
+
+            <button type="submit" id="submit-btn" class="btn-gradient" style="width:fit-content;padding:.75rem 2rem;">
+              <span class="material-symbols-outlined" style="font-size:1.1rem;">send</span>
+              Send Message
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <button id="back-to-top-btn" aria-label="Back to top" title="Back to top">
+    <span class="material-symbols-outlined" style="font-size:1.2rem;">arrow_upward</span>
+  </button>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">BA</div>
+          <div>
+            <div class="footer-name">Bilal Ahmad</div>
+            <div class="footer-sub">Qureshi University, Lahore &nbsp;·&nbsp; BSCS (2024–2028)</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Bilal Ahmad. All rights reserved. Qureshi University, Lahore.</p>
+        <div class="footer-links">
+          <a href="https://github.com/bilalahmad" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/bilal-ahmad-7b297a438" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:8ilalahmad56@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

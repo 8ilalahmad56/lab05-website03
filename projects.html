@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Bilal Ahmad's featured projects — Flashcard Generator, University Club Website, University Cafe Website."/>
+  <title>Projects | Bilal Ahmad — Featured Web Applications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@300;400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="projects">
+
+  <div id="scroll-progress"></div>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-pill">BA</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Bilal Ahmad</span>
+          <span class="nav-logo-sub">CS (5th Sem) · Qureshi University</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:.625rem;flex-shrink:0;">
+        <button class="btn-gradient" data-action="download-cv" style="padding:.45rem 1rem;font-size:.75rem;">
+          <span class="material-symbols-outlined" style="font-size:1rem;">download</span>
+          <span>Resume</span>
+        </button>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="material-symbols-outlined" style="font-size:1.35rem;">menu</span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="education.html">Education</a>
+      <a href="experience.html">Experience</a>
+      <a href="certificates.html">Certificates</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-container">
+
+      <div class="reveal" style="margin-bottom:2.5rem;">
+        <div class="section-label" style="color:var(--accent1);">
+          <span class="material-symbols-outlined">rocket_launch</span>
+          <span>Portfolio Showcase</span>
+        </div>
+        <h1 class="section-title" style="font-family:var(--font-proj);">Featured Projects</h1>
+        <p class="section-desc">Real-world websites and applications engineered using HTML, CSS, JavaScript, SQL, C++, and Java.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));gap:1.5rem;">
+
+        <!-- Project 1: Flashcard Generator -->
+        <div class="glass-card reveal" style="display:flex;flex-direction:column;overflow:hidden;">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Flashcard Generator Web App Interface"/>
+            <div class="project-img-overlay"></div>
+            <span class="project-tag" style="background:rgba(99,102,241,.85);color:#fff;">STUDY TOOL</span>
+          </div>
+
+          <div style="padding:1.375rem;display:flex;flex-direction:column;gap:1rem;flex:1;">
+            <h2 style="font-family:var(--font-proj);font-size:1.1rem;font-weight:700;color:var(--text);">Flashcard Generator Web App</h2>
+            <p style="font-size:.8rem;color:var(--muted);line-height:1.7;">An interactive web-based flashcard creator and quiz application designed to help students master challenging concepts via active recall and spaced repetition. Features custom deck creation, flip-card review mode, and persistent browser storage.</p>
+
+            <!-- Live Flashcard Demo -->
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-family:var(--font-code);font-size:.68rem;color:var(--accent1);margin-bottom:.5rem;">
+                <span>Try Mini Flashcard:</span>
+                <span style="color:var(--muted);">Click to flip ↷</span>
+              </div>
+              <div class="flashcard-wrapper" id="flashcard-proj1" title="Click to flip!">
+                <div class="flashcard-inner">
+                  <div class="flashcard-front">
+                    <span style="font-family:var(--font-code);font-size:.68rem;font-weight:700;text-transform:uppercase;color:var(--accent2);margin-bottom:.375rem;">C++ Question</span>
+                    <p style="font-size:.78rem;font-weight:600;color:var(--text);padding:0 .5rem;">What is the difference between a Pointer and a Reference?</p>
+                    <span style="font-family:var(--font-code);font-size:.65rem;color:var(--muted);margin-top:.5rem;">[Click to reveal Answer]</span>
+                  </div>
+                  <div class="flashcard-back">
+                    <span style="font-family:var(--font-code);font-size:.68rem;font-weight:700;text-transform:uppercase;color:var(--accent1);margin-bottom:.375rem;">Answer</span>
+                    <p style="font-size:.75rem;color:var(--text);padding:0 .5rem;">Pointers can be null and reassigned; References cannot be null and must bind to an existing object at declaration!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+              <span class="tech-pill">JavaScript ES6</span>
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3 3D Flip</span>
+              <span class="tech-pill">LocalStorage</span>
+            </div>
+          </div>
+
+          <div style="padding:1rem 1.375rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+            <a href="https://github.com/bilalahmad" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.375rem;font-family:var(--font-code);font-size:.72rem;color:var(--muted);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent1)'" onmouseout="this.style.color='var(--muted)'">
+              <span class="material-symbols-outlined" style="font-size:1rem;">code</span>Source Code
+            </a>
+            <a href="contact.html" style="display:inline-flex;align-items:center;gap:.3rem;font-family:var(--font-code);font-size:.72rem;font-weight:700;color:var(--accent1);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent2)'" onmouseout="this.style.color='var(--accent1)'">
+              <span class="material-symbols-outlined" style="font-size:1rem;">visibility</span>Live Preview
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: University Club Website -->
+        <div class="glass-card reveal" style="display:flex;flex-direction:column;overflow:hidden;">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80" alt="University Club Website and Portal"/>
+            <div class="project-img-overlay"></div>
+            <span class="project-tag" style="background:rgba(34,211,238,.2);border:1px solid rgba(34,211,238,.4);color:var(--accent1);">CAMPUS PORTAL</span>
+          </div>
+
+          <div style="padding:1.375rem;display:flex;flex-direction:column;gap:1rem;flex:1;">
+            <h2 style="font-family:var(--font-proj);font-size:1.1rem;font-weight:700;color:var(--text);">University Club Website</h2>
+            <p style="font-size:.8rem;color:var(--muted);line-height:1.7;">A comprehensive digital hub engineered for university student societies. Includes interactive event calendars, member registration forms, executive leadership profiles, photo galleries from hackathons, and dynamic announcement boards.</p>
+
+            <div style="display:flex;flex-direction:column;gap:.5rem;">
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:var(--muted);">
+                <span class="material-symbols-outlined" style="font-size:1rem;color:var(--success);">check_circle</span>
+                Student membership sign-up &amp; validation
+              </div>
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:var(--muted);">
+                <span class="material-symbols-outlined" style="font-size:1rem;color:var(--success);">check_circle</span>
+                SQL-backed event registration database
+              </div>
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:var(--muted);">
+                <span class="material-symbols-outlined" style="font-size:1rem;color:var(--success);">check_circle</span>
+                Fully responsive mobile &amp; desktop layout
+              </div>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">SQL Database</span>
+              <span class="tech-pill">HTML5 / CSS3</span>
+              <span class="tech-pill">Forms &amp; Validation</span>
+            </div>
+          </div>
+
+          <div style="padding:1rem 1.375rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+            <a href="https://github.com/bilalahmad" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.375rem;font-family:var(--font-code);font-size:.72rem;color:var(--muted);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent1)'" onmouseout="this.style.color='var(--muted)'">
+              <span class="material-symbols-outlined" style="font-size:1rem;">code</span>Source Code
+            </a>
+            <a href="contact.html" style="display:inline-flex;align-items:center;gap:.3rem;font-family:var(--font-code);font-size:.72rem;font-weight:700;color:var(--accent1);text-decoration:none;" onmouseover="this.style.color='var(--accent2)'" onmouseout="this.style.color='var(--accent1)'">
+              <span class="material-symbols-outlined" style="font-size:1rem;">open_in_new</span>Explore Site
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: University Cafe Website -->
+        <div class="glass-card reveal" style="display:flex;flex-direction:column;overflow:hidden;">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="University Cafe Online Ordering System"/>
+            <div class="project-img-overlay"></div>
+            <span class="project-tag" style="background:rgba(52,211,153,.12);border:1px solid rgba(52,211,153,.4);color:var(--success);">CAFE COMMERCE</span>
+          </div>
+
+          <div style="padding:1.375rem;display:flex;flex-direction:column;gap:1rem;flex:1;">
+            <h2 style="font-family:var(--font-proj);font-size:1.1rem;font-weight:700;color:var(--text);">University Cafe Website</h2>
+            <p style="font-size:.8rem;color:var(--muted);line-height:1.7;">An online cafeteria ordering system tailored for university campus food hubs. Allows students and faculty to browse categorized menus, customize orders, view prices, calculate tax and totals, and submit online pickup orders seamlessly.</p>
+
+            <div style="display:flex;flex-direction:column;gap:.5rem;">
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:var(--muted);">
+                <span class="material-symbols-outlined" style="font-size:1rem;color:var(--accent1);">check_circle</span>
+                Dynamic shopping cart with real-time totals
+              </div>
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:var(--muted);">
+                <span class="material-symbols-outlined" style="font-size:1rem;color:var(--accent1);">check_circle</span>
+                Menu filtering by meals, snacks &amp; beverages
+              </div>
+              <div style="display:flex;align-items:center;gap:.5rem;font-size:.78rem;color:var(--muted);">
+                <span class="material-symbols-outlined" style="font-size:1rem;color:var(--accent1);">check_circle</span>
+                SQL database for order storage &amp; inventory
+              </div>
+            </div>
+
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+              <span class="tech-pill">Java / SQL</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">HTML / CSS</span>
+              <span class="tech-pill">Cart Logic</span>
+            </div>
+          </div>
+
+          <div style="padding:1rem 1.375rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;">
+            <a href="https://github.com/bilalahmad" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.375rem;font-family:var(--font-code);font-size:.72rem;color:var(--muted);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='var(--accent1)'" onmouseout="this.style.color='var(--muted)'">
+              <span class="material-symbols-outlined" style="font-size:1rem;">code</span>Source Code
+            </a>
+            <a href="contact.html" style="display:inline-flex;align-items:center;gap:.3rem;font-family:var(--font-code);font-size:.72rem;font-weight:700;color:var(--accent1);text-decoration:none;" onmouseover="this.style.color='var(--accent2)'" onmouseout="this.style.color='var(--accent1)'">
+              <span class="material-symbols-outlined" style="font-size:1rem;">restaurant_menu</span>Order Demo
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <button id="back-to-top-btn" aria-label="Back to top" title="Back to top">
+    <span class="material-symbols-outlined" style="font-size:1.2rem;">arrow_upward</span>
+  </button>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">BA</div>
+          <div><div class="footer-name">Bilal Ahmad</div><div class="footer-sub">Qureshi University, Lahore &nbsp;·&nbsp; BSCS (2024–2028)</div></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Bilal Ahmad. All rights reserved. Qureshi University, Lahore.</p>
+        <div class="footer-links">
+          <a href="https://github.com/bilalahmad" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/bilal-ahmad-7b297a438" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:8ilalahmad56@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
