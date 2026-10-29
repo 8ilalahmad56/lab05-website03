@@ -1,4 +1,4 @@
-# lab05-website01
+# lab05-website03
 Prompt: Build a Professional Single-Page CV Website
 
 Create a modern, professional, fully responsive single-page CV/Resume website with a clean design, smooth scrolling, and an elegant user interface. The website should showcase my personal information, skills, education, experience, projects, and achievements in a visually appealing way.
